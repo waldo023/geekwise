@@ -1,0 +1,62 @@
+body{
+ margin: 0;
+}
+
+header{
+  background-color: rgba(0, 0, 0, 0.61);
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+}
+
+header ul{
+  margin: 0;
+}
+
+header li{
+  display: inline-block;
+  padding: 10%;
+  color: rgb(236, 246, 234);
+}
+
+main{
+  background-color: rgb(207, 223, 27);
+}
+
+main::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+div{
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+div:nth-of-type(1){
+  background-color: green;
+}
+
+div:nth-of-type(2){
+  background-color: rgb(10, 149, 200);
+}
+div:nth-of-type(3){
+  background-color: rgb(47, 224, 11);
+}
+div:nth-of-type(4){
+  background-color: rgb(255, 0, 0);
+}
+div:nth-of-type(5){
+  background-color: rgb(147, 0, 97);
+}
+
+footer{
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+footer li{
+  display: inline-block;
+
+}
