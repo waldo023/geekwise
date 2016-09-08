@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+}
+div{
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right:0;
+}
+
+img{
+  border: 2px solid white;
+  z-index: 50;
+  float: right;
+}
+
+
+section{
+  position: absolute;
+  left: calc(50% - calc(400px / 2));
+  right: calc(50% - calc(400px / 2));
+  top: calc(20% - calc(150px / 2));
+  background-color: white;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+h1{
+  text-align:left;
+}

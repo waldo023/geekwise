@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  background-image: url(../img/background.jpg);
+  background-position: bottom;
+  height: 900px;
+  padding: 20px;
+}
+
+img{
+  float: left;
+}
+h1{
+  color: white;
+}
+header h1{
+  margin: 0;
+  float: left;
+}
+
+h4{
+  position: absolute;
+  left: 40%;
+  color: white;
+}
+
+header ul{
+  margin: 0;
+}
+
+header ul li{
+  display: inline-block;
+  float: right;
+  padding: 10px;
+  color: white;
+}
+
+li:nth-of-type(5){
+  background-color: rgb(10, 122, 129);
+}
+
+main{
+  position: absolute;
+  left: 29%;
+  top: 50%;
+}
+
+main p{
+  text-align: center;
+  color: white;
+}
