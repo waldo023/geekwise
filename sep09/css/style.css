@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+}
+img{
+  position: absolute;
+  left: 3%;
+  top: 5%;
+  width: 50px;
+  height: auto;
+}
+header{
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  height: 900px;
+  color: white;
+}
+
+ul{
+  float: right;
+}
+ul li{
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+}
+h1{
+  position: absolute;
+  left: 8%;
+  top: 3%;
+  color: white;
+}
+p{
+  position: absolute;;
+  top: 10%;
+  left: 8%;
+}

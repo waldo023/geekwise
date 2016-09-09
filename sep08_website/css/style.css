@@ -1,50 +1,72 @@
 body{
   margin: 0;
-  background-image: url(../img/background.jpg);
-  background-position: bottom;
-  height: 900px;
-  padding: 20px;
+  font-family: arial, helvetica, sans-serif;
 }
-
+header{
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  height: 700px;
+  padding: 20px;
+  color: white;
+}
 img{
   float: left;
 }
-h1{
-  color: white;
+
+span{
+  color: hsl(194, 84%, 66%);
 }
 header h1{
   margin: 0;
   float: left;
 }
-
 h4{
   position: absolute;
   left: 40%;
-  color: white;
 }
-
 header ul{
   margin: 0;
 }
-
 header ul li{
   display: inline-block;
   float: right;
-  padding: 10px;
-  color: white;
+  padding: 15px;
 }
 
-li:nth-of-type(5){
-  background-color: rgb(10, 122, 129);
+ul li:hover, li:nth-of-type(5){
+  background-color: hsl(194, 84%, 66%);
+  border-top-left-radius: 20px 50%;
+  border-top-right-radius: 20px 50%;
+  border-bottom-right-radius: 20px 50%;
+  border-bottom-left-radius: 20px 50%;
+  padding: 10px 10px;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 
 main{
   position: absolute;
   left: 29%;
   top: 50%;
 }
-
 main p{
+  position: relative;
+  left: 13%;
   text-align: center;
-  color: white;
+  width: 70%;
+}
+button{
+  position: relative;
+  left: 20%;
+  border-top-left-radius: 20px 50%;
+  border-top-right-radius: 20px 50%;
+  border-bottom-right-radius: 20px 50%;
+  border-bottom-left-radius: 20px 50%;
+  padding: 10px 40px;
+}
+button.blue{
+  background-color: hsl(194, 84%, 66%);
 }
