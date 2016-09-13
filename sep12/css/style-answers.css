@@ -1,0 +1,56 @@
+body{
+  margin: 0;
+}
+h1, h2, h3, ul, ol{
+  margin: 0;
+}
+header{
+  background-color: #ccc;
+}
+header img{
+  height:50px;
+  width: auto;
+}
+h1{
+  float: left;
+}
+nav::after, section::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+header ul li{
+  display: inline-block;
+  float: right;
+  padding: 10px;
+}
+h2{
+  background-color: pink;
+  width: 70%;
+}
+section:first-of-type div:first-of-type{
+  width: 40%;
+  background-color: green;
+  float: left;
+}
+section:first-of-type div:nth-of-type(2){
+  width:calc(30% - 20px);
+  background-color: yellow;
+  float: left;
+  padding: 10px;
+}
+section:first-of-type div:nth-of-type(2) img{
+  width: 50%;
+}
+aside{
+  float: right;
+  width: 30%;
+  background-color: orange;
+}
+section:nth-of-type(2) div{
+  float: left;
+  width: 25%;
+}
+section:nth-of-type(2) div img{
+  width: inherit;
+}

@@ -1,36 +1,57 @@
 body{
   margin: 0;
 }
-img{
-  position: absolute;
-  left: 3%;
-  top: 5%;
-  width: 50px;
-  height: auto;
-}
 header{
   background-image: url(../img/background.jpg);
-  background-position: center;
-  height: 900px;
   color: white;
+  height:600px;
+}
+img.logo{
+  height: 60px;
+  width: auto;
+  float: left;
+  margin-left: 5%;
+}
+h1{
+  float: left;
+}
+h1::after{
+  font-size: 15px;
+  content: "Web Development Co.";
+  display: block;
+  clear: both;
+}
+h1{
+  margin: 0;
+  font-size: 50px;
+}
+span{
+  color: hsl(206, 51%, 56%)
 }
 
 ul{
+  width: 50%;
+  margin: 0;
   float: right;
+
 }
 ul li{
+  font-size: 20px;
   display: inline-block;
-  font-size: 15px;
-  padding: 10px;
+  padding: 5%;
 }
-h1{
+a{
+  text-decoration: none;
+  color: rgb(99, 88, 91);
+}
+ul li:first-of-type{
+  text-decoration: underline;
+  color: rgb(99, 88, 91);
+}
+img.other{
   position: absolute;
-  left: 8%;
-  top: 3%;
-  color: white;
-}
-p{
-  position: absolute;;
-  top: 10%;
-  left: 8%;
+  top: 50%;
+  left: calc(50% - 280px);
+  width: 600px;
+  height: auto;
 }
