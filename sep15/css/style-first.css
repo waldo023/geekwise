@@ -1,0 +1,42 @@
+body{
+  background-color: hsl(0, 1%, 88%);
+  color: purple;
+}
+nav, main{
+  display: flex;
+}
+nav{
+    justify-content: space-between;
+}
+ul li{
+  display: inline-block;
+  padding: 10px;
+}
+a{
+  text-decoration: none;
+  color: purple;
+  padding: 5px 15px;
+  border: 1px solid;
+  border-color: purple;
+  border-top-left-radius: 100% 5px;
+  border-bottom-left-radius: 100% 5px;
+  border-bottom-right-radius: 100% 5px;
+  border-top-right-radius: 100% 5px;
+}
+main a{
+  background-color: purple;
+  color: white;
+}
+main{
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding:0 25%;
+}
+h1, input, p{
+  align-self: center;
+}
+input{
+  width: 50%;
+  text-align: left;
+}
