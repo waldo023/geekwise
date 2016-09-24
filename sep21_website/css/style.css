@@ -1,0 +1,85 @@
+ @import 'https://fonts.googleapis.com/css?family=Poppins';
+ @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
+body{
+
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding:10px 20px;
+}
+nav * {
+margin: 0;
+padding: 0;
+}
+nav h1{
+  font-size: 50px;
+}
+nav ul {
+display: inline-flex;
+align-items: center;
+list-style:none;
+}
+nav ul li {
+  padding:10px;
+  margin:0 5px;
+  font-size:80%;
+}
+nav ul a {
+  text-decoration: none;
+  color:inherit;
+}
+.content{
+  width:65%;
+  margin: 0 auto;
+}
+#hero{
+  text-align: center;
+  position: relative;
+  padding:50px 0 550px;
+  overflow: hidden;
+  background-color:rgb(197, 228, 186);
+}
+#hero img {
+  position: absolute;
+  left:50%;
+  bottom:0;
+  transform:translate3d(-50%, 50%, 0);
+}
+#features {
+  margin-top:50px;
+  display: flex;
+  justify-content: space-around;
+}
+span{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding-top: 10px;
+
+  }
+.fa{
+  font-size:50px;
+  border: 3px solid;
+  border-radius:100%;
+}
+#header{
+  display: flex;
+  justify-content: space-around;
+}
+h1{
+font-size:20px;
+font-weight: lighter;
+}
+#p{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+p{
+  font-size: 15px;
+  padding:20px;
+}

@@ -1,58 +1,58 @@
 body{
   height: 100vh;
   margin: 0;
+  background-color: hsla(30, 3%, 77%, 0.4);
 }
-main{
-  display:flex;
+main, .container, .container2, .container address, .container form, .container form div{
+  display: flex;
+}
+main.contact{
+  height: inherit;
+  align-items: center;
 }
 .container{
-  width: 50%;
   text-align: left;
 }
-.container2{
+.container2, .container{
   width: 50%;
 }
-address, form, .container{
-  display: flex;
+.container address, .container form, .container{
   flex-direction: column;
 }
-a{
+.container a{
   text-decoration: none;
+}
+.container h2, .container address,.container a, form [type="text"], form [type="email"], form textarea{
   color: hsl(279, 100%, 30%);
 }
-h2, address{
-  margin-left: 25%;
-  color: hsl(279, 100%, 30%);
-}
-form div, textarea{
+form div, form textarea, .container h2, .container address{
   margin-left: 25%;
 }
-form div{
-  display: flex;
-}
-[type="text"], [type="email"]{
+form [type="text"], form [type="email"]{
   margin-bottom: 5px;
   margin-top: 5px;
   width: 30%;
-  color: hsl(279, 100%, 30%);
 }
-[type="text"]{
+form [type="text"]{
   margin-right: 10px;
 }
-textarea{
+form textarea{
   width: 50%;
   max-width: 50%;
   min-width: 50%;
   max-height: 300px;
   min-height: 100px;
   box-sizing: border-box;
-  color: hsl(279, 100%, 30%);
 }
 form [type="submit"]{
   align-self: flex-end;
   border:none;
   background-color: hsl(279, 100%, 30%);
+  color: white;
   padding: 10px 15px;
   margin-top: 5px;
   margin-right: 25%;
+}
+.container2 img{
+  width: 100%;
 }

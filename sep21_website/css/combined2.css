@@ -1,0 +1,122 @@
+body{
+  margin: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: hsl(262, 44%, 59%);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+nav{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+nav ul{
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+}
+nav ul li{
+  padding: 10px;
+  margin: 0 5px;
+  font-size: 80%;
+}
+nav ul a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.content::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+main.nav{
+  width: 100%;
+  background-color: hsl(263, 38%, 78%);
+}
+.content {
+  margin-left: 5%;
+  text-align: left;
+  float: left;
+  width: 17%;
+}
+#hero{
+  background-color: hsl(263, 38%, 78%);
+  height: 400px;
+}
+#hero img{
+  padding-right: 15%;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  height: 500px;
+
+}
+
+
+  ul li:hover{
+    cursor: pointer;
+    border: 1.5px solid #7E57C2;
+    padding: 1.5px 20px 1.5px;
+  }
+    ul li:nth-of-type(4){
+      border: 1.5px solid #7E57C2;
+      padding: 1.5px 20px 1.5px;
+    }
+    main, .container, .container2, .container address, .container form, .container form div{
+      display: flex;
+    }
+    main.contact{
+      height: inherit;
+      align-items: center;
+    }
+    .container{
+      text-align: left;
+    }
+    .container2, .container{
+      width: 50%;
+    }
+    .container address, .container form, .container{
+      flex-direction: column;
+    }
+    .container a{
+      text-decoration: none;
+    }
+    .container h2, .container address,.container a, form [type="text"], form [type="email"], form textarea{
+      color: hsl(279, 100%, 30%);
+    }
+    form div, form textarea, .container h2, .container address{
+      margin-left: 25%;
+    }
+    form [type="text"], form [type="email"]{
+      margin-bottom: 5px;
+      margin-top: 5px;
+      width: 30%;
+    }
+    form [type="text"]{
+      margin-right: 10px;
+    }
+    form textarea{
+      width: 50%;
+      max-width: 50%;
+      min-width: 50%;
+      max-height: 300px;
+      min-height: 100px;
+      box-sizing: border-box;
+    }
+    form [type="submit"]{
+      align-self: flex-end;
+      border:none;
+      background-color: hsl(279, 100%, 30%);
+      color: white;
+      padding: 10px 15px;
+      margin-top: 5px;
+      margin-right: 25%;
+    }
+    .container2 img{
+      width: 100%;
+    }
