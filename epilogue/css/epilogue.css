@@ -1,0 +1,56 @@
+body{
+  margin: 0;
+  background-color: #ccc;
+}
+
+header{
+  background-image: url(../img/banner.jpg);
+  text-align: center;
+  color: white;
+}
+header h1{
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+}
+header a{
+  text-decoration: underline dotted;
+}
+header p{
+  text-transform: capitalize;
+}
+header hr{
+  width: 30%;
+  color: white;
+}
+section.container{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+div{
+  text-align: center;
+  background-color: white;
+  padding: 5%;
+}
+div.big p{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+div.big{
+  margin-bottom: 5px;
+}
+div.big img{
+  border-radius: 100%;
+}
+section.div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.small{
+  width: 38%;
+  margin: 5px;
+  padding-bottom: 10px;
+}
+div.small img{
+  width: 100%;
+}
