@@ -1,12 +1,17 @@
 body{
   margin: 0;
   background-color: #ccc;
+  font-family: 'Poppins', sans-serif;
 }
-
 header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url(../img/banner.jpg);
   text-align: center;
   color: white;
+  height: 200px;
+  margin-bottom: 10px;
 }
 header h1{
   font-family: 'Pacifico', cursive;
@@ -15,42 +20,92 @@ header h1{
 header a{
   text-decoration: underline dotted;
 }
-header p{
+header p, div.big h2{
   text-transform: capitalize;
+  letter-spacing: 3px;
 }
 header hr{
-  width: 30%;
+  width: 35%;
   color: white;
 }
-section.container{
-  padding-left: 5%;
-  padding-right: 5%;
-}
 div{
-  text-align: center;
-  background-color: white;
-  padding: 5%;
+  border-radius: 100%;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
 }
-div.big p{
-  margin-left: 25%;
-  margin-right: 25%;
+div.container{
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-flow: column wrap;
+}
+div, article{
+  text-align: center;
+  padding-bottom: 5%;
 }
 div.big{
-  margin-bottom: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+div.big p, article{
+  margin-left: 25%;
+  margin-right: 25%;
 }
 div.big img{
   border-radius: 100%;
 }
-section.div{
+section{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.small{
-  width: 38%;
-  margin: 5px;
-  padding-bottom: 10px;
+div.small{
+  width: 48%;
+  margin-bottom: 55px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+div.small:nth-of-type(1), div.small:nth-of-type(3){
+  margin-right: 2%;
 }
 div.small img{
+  border-radius: 100%;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
   width: 100%;
+  position: relative;
+}
+div.small p{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h4{
+  color: white;
+  position: relative;;
+  transform: translateY(-500%);
+  font-size: 110%;
+  letter-spacing: 1px;
+}
+button{
+  border: 2px solid hsl(300, 1%, 46%);
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 100%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+article hr{
+  width: 20%;
+  color:hsl(300, 1%, 46%);
+}
+i{
+  padding: 5px;
 }
