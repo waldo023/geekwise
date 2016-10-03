@@ -1,0 +1,15 @@
+img{
+  margin: 5px;
+}
+main{
+  display: flex;
+}
+div{
+  position: absolute;
+  
+}
+img:hover{
+  height: 100px;
+  width: auto;
+  transform: rotate(360deg);
+}
