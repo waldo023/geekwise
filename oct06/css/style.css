@@ -1,0 +1,115 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+body{
+  margin: 0;
+  font-family: roboto;
+}
+header{
+  background-image: url(../img/home-slider-1-slide-2.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+/*NAV*/
+nav{
+  display: flex;
+  justify-content: space-between;
+
+}
+nav h1{
+  background-image: url(../img/logo-229x39.png);
+  background-repeat: no-repeat;
+}
+nav h1 a{
+  width: 229px;
+  height: 39px;
+  display: block;
+  color: transparent;
+}
+nav ul{
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 125%;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+nav ul ul{
+  width: 200px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  background-color: hsla(0, 0%, 0%, 0.8);
+  font-size: 100%;
+}
+nav ul ul li a{
+  display: block;
+  padding: 10px 0px;
+}
+nav > ul > li{
+  position: relative;
+}
+nav > ul > li:hover ul{
+  display: block;
+}
+nav > ul > li::after{
+  content: "/";
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+}
+nav > ul > li:last-of-type::after{
+  content: none;
+}
+/*Car Title*/
+header h2{
+  margin: auto;
+  font-size: 17vw;
+}
+/*SECTION GALLERY*/
+#gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+#gallery > div{
+  width: 25%;
+  height: 28vw;
+  overflow: hidden;
+  position: relative;
+}
+#gallery > div > img{
+  width: 100%;
+  transform: scale(1.5);
+}
+#gallery div:hover div{
+  /*display: flex;*/
+  opacity: 1;
+  border-radius: 0%;
+  transform: scale(1);
+}
+
+#gallery div div{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  transform: scale(.75);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: hsla(198, 100%, 58%, 0.8);
+  border-radius: 100%;
+  opacity: 0;
+  transition: 200ms;
+}
