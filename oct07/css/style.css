@@ -141,7 +141,8 @@ div.hr::after{
 }
 #news div.container{
   display: flex;
-  justify-content: space-around;
+  margin: auto;
+  justify-content: space-between;
 }
 #news div.container div{
   width: 22vw;
@@ -193,12 +194,42 @@ div.hr::after{
 #stats div.container2 h3{
   font-size: 5vw;
 }
-div.container2 div.percentbar:before{
+div.container2  div.percentbar::before{
   content: "";
   height: 6px;
-  width: 80px;
   display: block;
   background-color: #29c0ff;
   position: absolute;
-
+}
+div.container2 div.percentbar::after{
+  content: "";
+  height: 6px;
+  display: block;
+  background-color:hsl(320, 2%, 53%);
+  position: absolute;
+  right:0;
+}
+div.container2  div.a::before{
+  width: 54%;
+}
+div.container2  div.b::before{
+  width: 62%;
+}
+div.container2  div.c::before{
+  width: 42%;
+}
+div.container2  div.d::before{
+  width: 78%;
+}
+div.container2 div.a::after{
+  width: 46%;
+}
+div.container2 div.b::after{
+  width: 38%;
+}
+div.container2 div.c::after{
+  width: 58%;
+}
+div.container2 div.d::after{
+  width: 22%;
 }
