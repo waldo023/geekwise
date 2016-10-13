@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+  margin: 0;
+  font-family: 'Ubuntu' , sans-serif;
+}
+header, header nav{
+  display: flex;
+}
+header{
+  background-image: url(../img/slide-1.jpg);
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+header nav{
+  background-color: hsl(216, 33%, 63%);
+  justify-content: space-between;
+  width: 100vw;
+  position: fixed;
+}
+header nav h1{
+  color: white;
+  font-size: 25px;
+  padding-left: 5vw;
+  margin: 5px 0 0 0;
+}
+nav > ul{
+  margin: 0;
+  padding: 0;
+}
+nav > ul > li{
+  position: relative;
+  display: inline-block;
+  padding: 1vw;
+  font-size: 15px;
+}
+nav > ul > li:first-of-type{
+  background-color:   hsl(185, 65%, 51%);
+}
+header nav ul li a{
+  text-decoration: none;
+  color: white
+}
+header nav ul ul{
+  display: none;
+  width: 130px;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  position: absolute;
+  left: -30px;
+  top: 100%;
+  background-color: hsl(185, 65%, 51%);
+}
+header nav ul ul li{
+  text-align: center;
+}
+nav > ul > li:hover{
+  background-color: hsl(185, 65%, 51%);
+}
+nav > ul > li:hover ul{
+  display: block;
+}
+header h2{
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 15vw;
+  margin: 150px 0 0 40px;
+  color: white;
+}
+header p{
+  margin: 5px 0 15px 40px;
+  color: white;
+  font-size: 1.6vw;
+}
+p + a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 10px 40px;
+  padding: 2vw 3vw;
+  background-color:  hsl(185, 65%, 51%);
+  align-self: flex-start;
+  transition: all 200ms ease-in-out;
+}
+p + a:hover{
+  background-color: white;
+  color: black;
+}
+/*Info*/
+section#info{
+  display: flex;
+}
