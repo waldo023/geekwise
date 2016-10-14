@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+  margin: 0;
+  font-family: 'Ubuntu' , sans-serif;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header{
+  background-image: url(../img/slide-1.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  height: 100vh;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 10vw;
+  background-color: hsla(90, 1%, 25%, 0.67)
+}
+nav h1{
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+nav h1 a{
+  display: inline-block;
+  color: white;
+  width: 122px;
+  height: 100%;
+  opacity: 0;
+}
+nav ul{
+  display: flex;
+}
+nav > ul > li{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+nav > ul > li::after{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -200%;
+  left: 0;
+  background-image: linear-gradient(
+    hsla(189, 69%, 49%, 0.5),
+    hsla(189, 69%, 49%, 0),
+    hsla(0, 0%, 100%, 0.5)
+    );
+  transition: top 400ms ease-in-out;
+}
+nav > ul > li:hover::after{
+  top: 100%;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+nav li span{
+  flex: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: all 400ms ease-in-out;
+}
+nav li span:first-child{
+  background-color: hsla(189, 69%, 49%, 0);
+  transition: background-color 400ms ease-in-out;
+}
+nav li span:last-child{
+  background-color: hsla(0, 0%, 100%, 0);
+  transition: background-color 400ms ease-in-out;
+}
+nav li:hover span{
+  transform: translateY(0%);
+}
+nav li:hover span:last-child{
+  background-color: white;
+}
+nav li:hover span:first-child{
+  background-color: hsl(189, 69%, 49%);
+}
+/*header nav{
+  background-color: hsl(216, 33%, 63%);
+  justify-content: space-between;
+  width: 100vw;
+  position: fixed;
+}
+header nav h1{
+  color: white;
+  font-size: 25px;
+  padding-left: 5vw;
+  margin: 5px 0 0 0;
+}
+nav > ul{
+  margin: 0;
+  padding: 0;
+}
+nav > ul > li{
+  position: relative;
+  display: inline-block;
+  padding: 1vw;
+  font-size: 15px;
+}
+nav > ul > li:first-of-type{
+  background-color:   hsl(185, 65%, 51%);
+}
+header nav ul li a{
+  text-decoration: none;
+  color: white
+}
+header nav ul ul{
+  display: none;
+  width: 130px;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  position: absolute;
+  left: -30px;
+  top: 100%;
+  background-color: hsl(185, 65%, 51%);
+}
+header nav ul ul li{
+  text-align: center;
+}
+nav > ul > li:hover{
+  background-color: hsl(185, 65%, 51%);
+}
+nav > ul > li:hover ul{
+  display: block;
+}*/
+header h2{
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 15vw;
+  margin: 150px 0 0 40px;
+  color: white;
+}
+header p{
+  margin: 5px 0 15px 40px;
+  color: white;
+  font-size: 20px;
+}
+header p + a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 10px 40px;
+  padding: 2vw 3vw;
+  background-color:  hsl(185, 65%, 51%);
+  align-self: flex-start;
+  transition: all 200ms ease-in-out;
+}
+header p + a:hover{
+  background-color: white;
+  color: black;
+}
+/*Info*/
+section#info{
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw;
+}
+section#info div{
+  background-color: hsl(185, 65%, 51%);
+  width: 23vw;
+  padding: 3vw;
+  color: white;
+  transition: all 250ms ease-in-out;
+}
+section#info div:hover{
+  background-color: hsl(40, 4%, 16%);
+}
+section#info div h2{
+  font-size: 4vw;
+}
+section#info div h3{
+  font-size: 25px;
+}
+section#info div p{
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+section#info div a{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: hsl(185, 65%, 51%) ;
+  padding: 5% 0;
+  text-align: center;
+  width: 100px;
+  background-image: linear-gradient(to top, hsl(185, 65%, 51%) 50%, white 50% );
+  background-size: 100% 200%;
+  transition: background-position 1s;
+}
+section#info div a:hover{
+  color:white;
+  background-position: 0 100%;
+}
