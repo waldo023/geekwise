@@ -22,8 +22,7 @@ header{
 nav{
   display: flex;
   justify-content: space-between;
-  height: 10vw;
-  background-color: hsla(90, 1%, 25%, 0.67)
+  background-color: hsl(216, 33%, 63%);
 }
 nav h1{
   background-image: url(../img/logo.png);
@@ -45,7 +44,7 @@ nav > ul > li{
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+
 }
 nav > ul > li::after{
   display: block;
@@ -55,11 +54,6 @@ nav > ul > li::after{
   height: 100%;
   top: -200%;
   left: 0;
-  background-image: linear-gradient(
-    hsla(189, 69%, 49%, 0.5),
-    hsla(189, 69%, 49%, 0),
-    hsla(0, 0%, 100%, 0.5)
-    );
   transition: top 400ms ease-in-out;
 }
 nav > ul > li:hover::after{
@@ -77,51 +71,16 @@ nav li span{
   transform: translateY(-100%);
   transition: all 400ms ease-in-out;
 }
-nav li span:first-child{
-  background-color: hsla(189, 69%, 49%, 0);
-  transition: background-color 400ms ease-in-out;
-}
-nav li span:last-child{
-  background-color: hsla(0, 0%, 100%, 0);
-  transition: background-color 400ms ease-in-out;
-}
+
 nav li:hover span{
   transform: translateY(0%);
 }
 nav li:hover span:last-child{
-  background-color: white;
+  background-image: none;
+  opacity: 0;
 }
 nav li:hover span:first-child{
   background-color: hsl(189, 69%, 49%);
-}
-/*header nav{
-  background-color: hsl(216, 33%, 63%);
-  justify-content: space-between;
-  width: 100vw;
-  position: fixed;
-}
-header nav h1{
-  color: white;
-  font-size: 25px;
-  padding-left: 5vw;
-  margin: 5px 0 0 0;
-}
-nav > ul{
-  margin: 0;
-  padding: 0;
-}
-nav > ul > li{
-  position: relative;
-  display: inline-block;
-  padding: 1vw;
-  font-size: 15px;
-}
-nav > ul > li:first-of-type{
-  background-color:   hsl(185, 65%, 51%);
-}
-header nav ul li a{
-  text-decoration: none;
-  color: white
 }
 header nav ul ul{
   display: none;
@@ -142,24 +101,25 @@ nav > ul > li:hover{
 }
 nav > ul > li:hover ul{
   display: block;
-}*/
+}
+header div{
+    margin: 150px 0 15px 40px;
+}
 header h2{
   margin: 0;
   text-transform: uppercase;
   font-size: 15vw;
-  margin: 150px 0 0 40px;
   color: white;
 }
 header p{
-  margin: 5px 0 15px 40px;
   color: white;
   font-size: 20px;
+  margin-bottom: 50px;
 }
 header p + a{
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  margin: 0 0 10px 40px;
   padding: 2vw 3vw;
   background-color:  hsl(185, 65%, 51%);
   align-self: flex-start;
