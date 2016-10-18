@@ -167,9 +167,8 @@ a.slide{
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 4% 5%;
+  padding: 4% 10%;
   text-align: center;
-  width: 100px;
   background-size: 100% 200%;
   transition: all 1s;
 }
@@ -190,7 +189,6 @@ a.blue2white{
   padding: 20px 30px;
 }
 a.white2blue:hover{color: white;}
-a.white2black:hover{color:white;}
 a.blue2white:hover{color: hsl(185, 65%, 51%);}
 /*gallery*/
 section#gallery{
@@ -267,7 +265,7 @@ section#info a{
   margin: 20px 0 100px; 0;
 }
 section#info div:hover img{
-  transform: rotateY(360deg) scale(.75);
+  transform: rotateY(360deg) scale(.85);
 }
 /*blog*/
 section#blog{
@@ -293,6 +291,62 @@ section#blog hr{
   width: 40vw;
   border: 1.5px solid white;
 }
+/*contacts*/
+section#contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section#contacts > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+section#contacts h3{
+  font-size: 6vw;
+}
+section#contacts div:nth-of-type(1) div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+}
+section#contacts div:nth-of-type(1) div > p{
+  padding: 40px 50px;
+  font-size: 30px;
+  border-radius: 100%;
+  margin-right: 50px;
+  align-self: center;
+  background-color: hsl(185, 65%, 51%);
+  color: white;
+}
+section#contacts div div address p{
+  margin: 3px 0;
+  font-size: 15px;
+  color: hsl(199, 2%, 21%);
+}
+section#contacts > div:nth-of-type(2){
+  justify-content: center;
+}
+section#contacts > div:nth-of-type(2) div p{
+  background-color: hsl(0, 0%, 9%);
+  color: white;
+  border-radius: 15%;
+  position: relative;
+  margin-right: 30px;
+}
+section#contacts > div:nth-of-type(2) i{
+  padding: 10px;
+  transition: all 300ms ease-in-out;
+}
+section#contacts > div:nth-of-type(2) i:hover{
+  font-size: 18px;
+  color: hsl(185, 65%, 51%);
+}
 /*media*/
 @media screen and (max-width: 768px){
   section#plans div{
@@ -312,7 +366,12 @@ section#blog hr{
   section#info div h4{
     width: auto;
   }
-
+  section#contacts div div{
+    width: 50%;
+  }
+  section#contacts div div address{
+    align-self: center;
+  }
 }
 @media screen and (max-width: 544px){
   section#gallery > div{
@@ -330,5 +389,11 @@ section#blog hr{
   section#gallery div:hover div{
     background-color: white;
     color: hsl(0, 0%, 9%);
+  }
+  section#contacts div div{
+    width: 100%;
+  }
+  section#contacts div div address{
+    align-self: center;
   }
 }
