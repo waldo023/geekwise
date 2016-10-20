@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'BrushScript';
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot');
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.svg#eb21f6604ba28d5573abad1c01255830') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+@font-face {
+  font-family: 'Fraktur';
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot');
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.svg#f78369fb7f540f355d128fc492e4218d') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+body{
+  background-color:#660000;
+  margin: 4vw 13vw;
+}
+ul, ol{
+  margin: 0;
+  padding:0;
+}
+header{
+  display: flex;
+  border: 4px solid hsl(0, 0%, 9%);
+}
+header div{
+  flex: 1;
+  border-right: 3px solid hsl(0, 0%, 9%);
+  background-color: hsl(0, 100%, 100%);
+  text-align: center;
+}
+header h1{
+  margin: 0;
+  color: #BA9500;
+  font-size: 4vw;
+  font-family: 'Fraktur' , sans-serif;
+  text-shadow:
+    -1px -1px 0px hsl(0, 0%, 9%),
+     1px -1px 0px hsl(0, 0%, 9%),
+     -1px 1px 0px hsl(0, 0%, 9%),
+     1px 1px 0 hsl(0, 0%, 9%);
+}
+a{
+  text-decoration: none;
+}
+h2{
+  font-size: 2.5vw;
+}
+h3{
+  font-size: 2vw;
+}
+i.fa-long-arrow-up{
+  margin: 2px;
+}
+h2, h3,  li a, a.top, i{
+  font-family: 'BrushScript' , sans-serif;
+  color: white;
+  text-shadow:
+    -1px -1px 0px #812D2A,
+     1px -1px 0px #812D2A,
+     -1px 1px 0px #812D2A,
+     1px 1px 0 #812D2A;
+}
+li a:hover{
+  text-shadow:
+    -1px -1px 10px #812D2A,
+     1px -1px 0px #812D2A,
+     -1px 1px 0px #812D2A,
+     1px 1px 10px #812D2A;
+}
+nav ul li a{
+  font-size: 2.5vw;
+}
+header  img{
+  flex: 3;
+  width: 100%;
+}
+hr{
+  width: 100%;
+  margin: 3px 0;
+  border: 1.5px solid white;
+}
+section{
+  border: 4px solid hsl(0, 0%, 9%);
+  background-color: white;
+  padding: 2vw 3vw;
+}
+nav{
+  padding: 5px 0;
+  border-top: 2px dashed #ccc;
+  border-bottom: 2px dashed #ccc;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+div.row{
+  display: flex;
+}
+section#home div.row aside:first-of-type{
+  flex: 2;
+}
+div.column{
+  display: flex;
+  flex-direction: column;
+}
+
+section#home div img{
+  float: right;
+  width: 149px;
+  height: auto;
+}
+section#home div p{
+  font-size: 13px;
+}
+section#home aside:last-of-type{
+  flex: 1;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+div.info{
+  border: 1.5px solid #71716C;
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 50px;
+}
+div.info h3{
+  position: absolute;
+  top: -3.4vw;
+  left: 15px;
+  color: #BA9500;
+  background-color: white;
+}
+section#home aside:last-of-type > div:nth-of-type(2){
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  }
+section#home aside:last-of-type > div:nth-of-type(2) div{
+  margin: 0;
+  padding-right: 30px;
+}
+section#history aside:first-of-type img{
+  float: left;
+  shape-outside: circle();
+  width: 149px;
+  height: auto;
+}
+/*history*/
+section#history aside:first-of-type img:first-of-type{
+  float: right;
+}
+section#history aside:last-of-type{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/*menu*/
+section#menu div.info h3{
+  color: white;
+}
+section#menu div.row:nth-of-type(1){
+  justify-content: space-between;
+}
+section#menu div.info div{
+  text-align: center;
+}
+section#menu div.row  div.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+section#menu div.row  div.info:nth-of-type(1){
+  margin-right: 20px;
+}
+section#menu div.row  div.info p{
+  margin: 0;
+}
+div.column > div:last-of-type{
+  align-self: center;
+  text-align: center;
+}
