@@ -55,7 +55,7 @@ h2{
   font-size: 2.5vw;
 }
 h3{
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 i.fa-long-arrow-up{
   margin: 2px;
@@ -95,8 +95,8 @@ section{
 }
 nav{
   padding: 5px 0;
-  border-top: 2px dashed hsl(0, 0%, 70%);
-  border-bottom: 2px dashed hsl(0, 0%, 70%);
+  border-top: 4px dotted hsl(0, 0%, 70%);
+  border-bottom: 4px dotted hsl(0, 0%, 70%);
 }
 nav ul{
   list-style: none;
@@ -119,9 +119,6 @@ section#home div img{
   width: 149px;
   height: auto;
 }
-section#home div p{
-  font-size: 13px;
-}
 section#home div span{
   text-decoration: underline;
 }
@@ -140,7 +137,7 @@ div.info{
 }
 div.info h3{
   position: absolute;
-  top: -3.4vw;
+  top: -4.3vw;
   left: 15px;
   color: #BA9500;
   background-color: white;
@@ -196,6 +193,9 @@ section#menu div.row  div.info:nth-of-type(1){
 section#menu div.row  div.info p{
   margin: 0;
 }
+section#menu div.info div p{
+  margin: 0;
+}
 section#menu div.column > div:last-of-type{
   align-self: center;
   text-align: center;
@@ -214,9 +214,10 @@ div.header{
     hsla(0, 90%, 30%, .2) 50%
     );
   text-align: right;
-  border-bottom: 2px dashed hsl(0, 0%, 70%);
+  border-bottom: 4px dotted hsl(0, 0%, 70%);
 }
 div.header h3{
+  padding-right: 5px;
   text-shadow:
   -1px -1px 0px #812D2A,
    1px -1px 10px #812D2A,
@@ -239,19 +240,22 @@ section#news div.column > div div{
 }
 section#news div.header:last-of-type{
   border-bottom: none;
-  border-top: 2px dashed hsl(0, 0%, 70%);
+  border-top: 4px dotted hsl(0, 0%, 70%);
 }
 /*contacts*/
+section#contact div.header{
+  justify-content: space-between;
+}
+section#contact div.header i{
+  font-size: 3vw;
+}
 section#contact form{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 section#contact form div{
   display: flex;
-  justify-content: center;
-  width: 75%;
 }
 section#contact form div p{
   font-size: 15px;
@@ -282,6 +286,9 @@ a.button:hover{
 }
 section#contact div{
   text-align: center;
+}
+address p{
+  margin: 5px;
 }
 
 @media screen and (max-width: 768px){
