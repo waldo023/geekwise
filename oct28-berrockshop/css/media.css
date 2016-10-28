@@ -1,0 +1,71 @@
+@media screen and (max-width: 744px) {
+  header div{
+    display: none;
+  }
+  body{
+    border: none;
+    margin: 0;
+    width: 97vw;
+  }
+  body > header, main{
+    border: none;
+  }
+  body > header{
+    background-image: url(../img/berrockbanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body > header > h1{
+    margin: 10px auto;
+    background-color: hsla(60, 100%, 97%, .85);
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  hr{
+    display: none;
+  }
+  nav{
+    text-align: center;
+  }
+  nav ul{
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    border-width: 1px;
+    padding: 0 10vw;
+
+  }
+  nav li{
+    text-align: center;
+    line-height: 2;
+  }
+  section, aside{
+    width: 100vw;
+    padding: 0 20px 25px;
+  }
+  aside{
+    margin: 0;
+    display: inline;
+  }
+  div.fadein {
+    display: block;
+    position:relative;
+    width: 90vw;
+    height:332px;
+   }
+  .fadein img {
+    position: absolute;
+    left: 30vw;
+    top:0;
+  }
+  div.reg{
+    display: none;
+  }
+  div.container{
+    display: block;
+  }
+  textarea{
+    max-width: 65vw;
+  }
+}
