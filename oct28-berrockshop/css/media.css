@@ -5,7 +5,6 @@
   body{
     border: none;
     margin: 0;
-    width: 97vw;
   }
   body > header, main{
     border: none;
@@ -40,6 +39,9 @@
     text-align: center;
     line-height: 2;
   }
+  #index aside div.box p{
+    text-align: center;
+  }
   section, aside{
     width: 100vw;
     padding: 0 20px 25px;
@@ -48,16 +50,21 @@
     margin: 0;
     display: inline;
   }
+  #history aside{
+    padding: 0;
+  }
   div.fadein {
     display: block;
     position:relative;
     width: 90vw;
-    height:332px;
+    height: 60vw;
    }
   .fadein img {
     position: absolute;
-    left: 30vw;
-    top:0;
+    width: 80vw;
+    height: 50vw;
+    left: 10%;
+    top:-5%;
   }
   div.reg{
     display: none;
