@@ -123,7 +123,6 @@ aside:nth-of-type(2) nav ul li a{
 #index section:last-of-type{
   display: flex;
   justify-content: space-around;
-  padding: 5px;
   width: 98vw;
   background-color: #2B0A03;
   position: relative;
@@ -174,6 +173,15 @@ aside:nth-of-type(2) nav ul li a{
 .bot img {
   margin-left: 68vw;
 }
+.bot img:nth-of-type(1) {
+  position: absolute;
+  top: -61.3px;
+  left: 10px;
+}
+.bot {
+  position: relative;
+  margin-top: 200px;
+}
 .foot {
   color: hsl(32, 99%, 40%);
   background-color: #000000;
@@ -198,11 +206,28 @@ aside:nth-of-type(2) nav ul li a{
   display: none;
 }
 
+#parties aside div{
+  border-bottom: 1px dashed #BCBCBC;
+  padding: 10px 0;
+}
+#parties aside div a{
+  color: #838870;
+  text-decoration: underline;
+}
+
+
 
 
 @media screen and (max-width:776px){
+  header{
+    margin: 0;
+  }
   header nav{
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  body header nav ul{
+    justify-content: center;
   }
   header nav img{
     width: 50%;
@@ -213,10 +238,67 @@ aside:nth-of-type(2) nav ul li a{
     width: 100%;
   }
   header nav ul li{
-    background-color: red;
-    background-image: none;
+    background-image: url(../img/menubghover.jpg);
+  }
+  header nav ul li:hover{
+    background-image: url(../img/menubghover.jpg);
   }
   header nav ul li a{
     font-size: 3vw;
+  }
+  section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  section:first-of-type{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  section aside:first-of-type{
+    width: 100%;
+    margin: 0;
+    background:none;
+  }
+  #index section aside:first-of-type img{
+    float: none;
+    width: 100%;
+  }
+  #index section aside:first-of-type p{
+    font-size: 10px;
+  }
+  section aside:last-of-type{
+    order: -1;
+    margin: 0;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    background-size: cover;
+    background-position: bottom;
+  }
+  section aside:last-of-type i{
+    display: none;
+  }
+  section aside:last-of-type li{
+    display: block;
+  }
+ section:last-of-type img{
+    display: none;
+  }
+  hr{
+    display: none;
+  }
+  #index section:last-of-type i{
+    display: none;
+  }
+  #index section:last-of-type ul li{
+    display: block;
+  }
+  #index section:last-of-type{
+    width: 96vw;
+  }
+  .bot{
+    display: none;
   }
 }
