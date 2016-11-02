@@ -1,0 +1,53 @@
+html{
+  background-image: url(../img/headbg.jpg) ,url(../img/bobybg.jpg);
+  background-color: black;
+  background-position: center top;
+  background-repeat: no-repeat, repeat-x;
+  color: white;
+}
+.container{
+  width: 800px;
+  margin: 0 auto;
+}
+section{
+  width: 64%;
+  float: left;
+  background-image: url(../img/leftbg.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+aside{
+  width: 34%;
+  float: right;
+  background-image: url(../img/rightbg.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+main::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+footer{
+  background-color: #2A0A04;
+}
+body > :first-child .pump{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /*background-image: url(../img/pictop.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;*/
+}
+footer .container{
+  position: relative;
+  padding: 5px 0;
+  /*background-image: url(../img/picbottom.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;  */
+}
+footer .container .pump{
+  position: absolute;
+  top: 0;
+  right: -230px;
+}
