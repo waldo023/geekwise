@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Signika');
+body{
+  font-family: 'Signika', sans-serif;
+}
+body, h1, ul{
+  margin: 0;
+}
+h1, h2{
+  color: hsl(0, 0%, 99%);
+}
+p{
+  color: hsl(0, 0%, 90%);
+}
+header{
+  display: flex;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: hsla(206, 82%, 6%, 0.88);
+  width: 99vw;
+  color: white;
+}
+header nav ul{
+  margin-right: 10px;
+}
+nav h1{
+  font-size: 90%;
+}
+nav h1 span{
+  color: hsl(0, 0%, 90%);
+}
+header nav > ul{
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+header nav > ul p{
+  margin: 0;
+  display: inline;
+}
+header div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  padding: 0 25vw;
+}
+header div h1{
+  font-size: 5vw;
+}
+header div p{
+  font-size: 2vw;
+}
+section{
+  display: flex;
+  height: 100vh;
+  padding: 0 10vw;
+}
+section#center{
+  background-image: radial-gradient( hsl(205, 30%, 21%), hsl(201, 49%, 13%));
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+div.container{
+  display: flex;
+  justify-content: space-around;
+}
+section#center > div{
+  text-align: center;
+}
+section#center div.container div img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+section#center div.container div{
+  width: 40%;
+  background-color:hsl(201, 21%, 25%);
+  border-radius: 10px;
+}
+section#center div.container div p{
+  margin: auto 10px;
+}
+section#left{
+  flex-direction: column;
+  justify-content: center;
+  background-image: radial-gradient( hsl(205, 30%, 21%), hsl(201, 49%, 5%));
+}
+section#left div.container{
+  justify-content: center;
+  align-items: flex-start;
+}
+section#left div.container div{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+section#left div.container div ul{
+  list-style: none;
+}
+section#left div.container div ul li{
+  margin: 20px;
+}
+section#left div.container div ul a{
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: hsla(0, 0%, 40%, .5);
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+section#left div.container a.active{
+  background-color: hsl(289, 88%, 51%);
+  color: hsl(0, 0%, 97%);
+}
+section#left div.container div ul a:hover{
+  background-color: hsl(264, 89%, 47%);
+}
+section#left div.container div:nth-of-type(2){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 2;
+  position: relative;
+}
+section#left div.container div:nth-of-type(2) img{
+  width: 30%;
+  margin: 5px;
+  border-radius: 10px;
+}

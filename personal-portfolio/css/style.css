@@ -58,11 +58,14 @@ section.cs div{
   align-items: center;
   margin-bottom: 20px;
   opacity: 0;
-  transition: opacity 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
   text-align: left;
 }
 section.cs:hover div{
   opacity: 1;
+}
+section.cs div:hover{
+  transform: scale(1.1);
 }
 section.cs div img{
   flex: 1;
@@ -103,8 +106,9 @@ section.ah div.info{
 }
 section.ah:hover div.info, section.ah:hover div.info p , section.ah:hover div.info h3{
   opacity: 1;
-  border-radius: 10px;
+  border-radius: 5px;
 }
+
 section.ah div.info p, section.ah div.info h3{
   opacity: 0;
 }
@@ -160,6 +164,9 @@ section.ec div aside:last-of-type{
     flex-direction: column;
     text-align: center;
     opacity: 1;
+  }
+  section.cs div:hover{
+    transform: none;
   }
   section.ah div.info{
     width: 100%;
