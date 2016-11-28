@@ -1,0 +1,58 @@
+/*hsl(348, 95%, 59%)*/
+/*hsl(48, 90%, 59%)*/
+/*hsl(0, 0%, 96%)*/
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  color: hsl(0, 0%, 96%);
+}
+a.btn{
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: hsl(348, 95%, 59%);
+  border-radius: 20px;
+  font-weight: 600;
+  border: 2px solid hsl(0, 0%, 96%);
+}
+a.btn:hover{
+  color: hsl(48, 90%, 59%);
+}
+section{
+  text-align: center;
+}
+section > ul{
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+}
+section > ul > li{
+  flex: 1;
+  background-color: hsl(0, 0%, 96%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+section > ul > li:hover{
+  transform: scale(1.05);
+}
+section > ul > li a{
+  margin-top: auto;
+  align-self: center;
+}
+section > ul > li:nth-child(2){
+  background-color: hsl(348, 95%, 59%);
+  color: hsl(0, 0%, 96%);
+  transform: scale(1.15);
+  z-index: 1;
+}
