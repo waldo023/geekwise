@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,21 @@
   <title>Osvaldo Vallejo</title>
 </head>
 <body>
+  <i class="fa fa-bars" id="bars" aria-hidden="true" onclick="OpenNav()"></i>
+  <nav id="nav">
+    <i class="fa fa-times" aria-hidden="true" onclick="CloseNav()"></i>
+    <ul id="ul">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="photoshop.html">Photoshop Projects</a></li>
+      <li><a href="coding.html">HTML/CSS Projects</a></li>
+    </ul>
+  </nav>
   <header>
     <img src="img/waldo.png" alt="" />
     <div class="">
-      <!-- <h1>Osvaldo <br> Vallejo</h1> -->
-
+      <h1>Osvaldo</h1>
+      <img src="img/profile-pic.jpg" alt="">
+      <h1>Vallejo</h1>
     </div>
   </header>
   <div class="container">
@@ -93,18 +104,19 @@
     <h2>Skills</h2>
     <div>
       <div>
+        <h3><a href="#">HTML/CSS</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, porro.</p>
+      </div>
+      <div>
         <h3>Bilingual</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, porro.</p>
       </div>
       <div>
-        <h3>HTML/CSS</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, porro.</p>
-      </div>
-      <div>
-        <h3>Photoshop</h3>
+        <h3><a href="photoshop.html">Photoshop</a></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, porro.</p>
       </div>
     </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>

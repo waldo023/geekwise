@@ -10,10 +10,49 @@ h2{
  align-self: center;
  margin: 0;
 }
+nav{
+  position: fixed;
+  background:  hsl(185, 90%, 24%);
+  height: 100vh;
+  width: 0vw;
+  z-index: 2;
+  transition: width 250ms ease-in-out;
+}
+nav ul{
+  padding-top: 25%;
+  text-align: left;
+  list-style: none;
+  display: none;
+}
+nav ul li{
+  padding-bottom: 10%;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+}
+i.fa-times{
+  color: white;
+  float: right;
+  font-size: 30px;
+  margin: 10px 10px 0 0;
+}
+i.fa-times:hover{
+  cursor: pointer;
+}
+i.fa-bars{
+  position: fixed;
+  left: 5%;
+  top: 10%;
+  font-size: 35px;
+}
+i.fa-bars:hover{
+  cursor: pointer;
+}
 header{
   display: flex;
   padding-top: 100px;
-  background-image: url(../img/Name.png);
+  background-image: url(../img/headbg.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -45,9 +84,7 @@ header div img:hover{
 header h1{
   margin: 0;
   padding: 5px;
-  font-size: 15vw;
-  line-height: 1;
-  letter-spacing: 20px;
+  font-size: 8vw;
   color: hsl(0, 3%, 90%);
 }
 div.container{
@@ -83,8 +120,8 @@ section.cs div img{
 }
 section.cs div p{
   flex: 3;
-  background-color: #170804;
-  color:#F6C666;
+  background-color: hsla(185, 70%, 44%, 0.63);
+  color: hsl(0, 3%, 100%);
   padding: 3vw 1vw;
   border-radius: 15px
 }
@@ -101,8 +138,8 @@ section.ah  div.container{
 section.ah div.info{
   text-align: center;
   box-sizing: border-box;
-  background-color: hsla(12, 70%, 5%, 0.9);
-  color: #F6C666;
+  background-color: hsla(185, 70%, 44%, 0.63);
+  color: hsl(0, 3%, 100%);
   width: 50%;
   padding: 8vw 5vw;
   opacity: 0;
@@ -172,6 +209,21 @@ section.skills > div{
 }
 section.skills div div{
   width: 30%;
+}
+#photoshop, #coding{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+div.cycle-slideshow{
+  height: 80vh;
+  margin: auto;
+  z-index: -1;
+}
+div.cycle-slideshow img{
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
 }
 @media screen and (max-width:556px){
   header div img{
