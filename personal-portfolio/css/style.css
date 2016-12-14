@@ -216,16 +216,53 @@ section.skills div div{
   flex-direction: column;
 }
 div.cycle-slideshow{
-  height: 80vh;
+  width: 65vw;
   margin: auto;
-  z-index: -1;
+  z-index: 1;
 }
 div.cycle-slideshow img{
   height: 100%;
   width: 100%;
   border-radius: 15px;
 }
+#photoshop > img, #coding > img{
+  display: none;
+}
+
 @media screen and (max-width:556px){
+
+   #nav{
+    width: 100vw;
+    height: auto;
+    display: block;
+    background:  hsla(185, 90%, 24%, .5);
+  }
+  nav ul{
+    padding-top: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li{
+    padding-bottom: 10%;
+  }
+  nav a{
+    color: white;
+    text-decoration: none;
+  }
+  i.fa-times{
+    margin: 0;
+    display: none;
+  }
+  i.fa-times:hover{
+    cursor: pointer;
+  }
+  #bars{
+    display: none !important;
+  }
+  i.fa-bars:hover{
+    cursor: pointer;
+  }
+
   header div img{
     transition: none ;
   }
@@ -265,4 +302,13 @@ div.cycle-slideshow img{
   section.skills div div{
     width: 800%;
   }
+  #photoshop h1, #coding h1{
+    margin-top: 20vw;
+   }
+   #photoshop > img, #coding > img{
+     width: 57vw;
+     margin-top: 1vw;
+     align-self: center;
+     display: block;
+   }
 }
