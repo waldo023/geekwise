@@ -1,0 +1,222 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,600|Pacifico');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+  margin: 0;
+  font-family: 'Open+Sans', sans-serif;
+}
+h2,h3, h4, h5{
+  font-family: 'Montserrat';
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+nav h1{
+  font-family: 'Pacifico', cursive;
+  color: hsl(9, 89%, 66%);
+  margin: 0 0 0 85px;
+}
+nav ul{
+  padding: 20px;
+}
+nav div{
+  position: absolute;
+  background-color: hsl(193, 68%, 45%);
+  left: -500px;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  transition: left 150ms ease-in-out;
+}
+nav div.open{
+  left: 0;
+}
+.fa-times{
+  position: absolute;
+  color: hsla(0, 0%, 100%, .55);
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+  transition: color 150ms ease-in-out;
+}
+.fa-times:hover{
+  color: white;
+}
+.fa-bars{
+  color: hsl(204, 8%, 88%);
+  font-size: 25px;
+}
+nav li{
+  border-bottom: 1px solid hsla(0, 0%, 100%, .25);
+}
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 15px 0;
+  font-weight: 100;
+  font-family: inherit;
+}
+.btn{
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: inherit;
+  text-decoration: none;
+  transition: background-color 250ms ease-in-out;
+}
+.btn:hover{
+  background-color: hsl(0, 0%, 95%);
+}
+header{
+  padding: 0 20%;
+  text-align: center;
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+header h2{
+  color: hsl(192, 68%, 45%);
+}
+header p{
+  color: hsl(0, 0%, 40%);
+}
+header div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0 100px 0;
+}
+.btn-cta{
+  background-color: hsl(9, 89%, 66%);
+  color: white;
+  border: none;
+}
+.btn-cta:hover{
+  background-color: hsl(9, 89%, 75%);
+}
+section.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 7vw;
+  box-sizing: border-box;
+}
+section.info div div p{
+  font-size: 14px;
+}
+div.left{
+  text-align: right;
+}
+div.img{
+  margin: 45px;
+}
+div.right{
+  text-align: left;
+}
+section.info div.img img{
+  border-radius: 100%;
+}
+div.left div:first-of-type, div.right div:first-of-type{
+  margin-bottom: 70px;
+}
+h4{
+  color: hsl(192, 68%, 45%);
+}
+h4 + p{
+  font-weight: lighter;
+  color: hsl(0, 0%, 35%);
+  line-height: 1.5;
+}
+section.quote{
+  background-color: hsl(9, 89%, 66%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 5% 30vw;
+}
+section.quote h3{
+  font-size: 30px;
+  font-weight: bolder;
+}
+section.quote h5{
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+section.quote p{
+  margin: 0;
+}
+section.quote q, section.quote p{
+    color: hsla(0, 0%, 100%, 0.9);
+}
+section.sec{
+  padding: 40px 50px;
+  justify-content: space-around;
+}
+section.sec div img{
+  width: 100%;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+section.sec div{
+  width: 28%;
+  border: 1px solid hsl(0, 0%, 73%);
+  border-radius: 3px;
+}
+section.sec div p{
+  font-size: 13px;
+  margin: 20px;
+  line-height: 2;
+}
+section.sec div h4{
+  margin: 20px;
+  font-weight: 900;
+  font-size: 20px;
+}
+footer{
+  background-color: hsl(192, 68%, 45%);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+}
+footer div div{
+  display: flex;
+  justify-content: space-around;
+}
+footer div address{
+  margin: 20px;
+  font-size: 13px;
+  color: hsl(193, 27%, 85%);
+}
+footer p{
+  color: hsl(193, 27%, 85%);
+  font-size: 10px;
+}
+footer hr{
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  width: 50%;
+}
+footer h3{
+  color: white;
+  font-size: 30px;
+}
+footer .fa{
+  margin: 0 5px;
+  color: hsl(9, 89%, 66%);
+}

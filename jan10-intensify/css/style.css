@@ -1,0 +1,108 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+nav h1{
+  font-family: 'Pacifico', cursive;
+  color: hsl(9, 89%, 66%);
+  margin: 0 0 0 85px;
+}
+nav ul{
+  padding: 20px;
+}
+nav div{
+  position: absolute;
+  background-color: hsl(193, 68%, 45%);
+  left: -500px;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  transition: left 150ms ease-in-out;
+}
+nav div.open{
+  left: 0;
+}
+.fa-times{
+  position: absolute;
+  color: hsla(0, 0%, 100%, .55);
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+  transition: color 150ms ease-in-out;
+}
+.fa-times:hover{
+  color: white;
+}
+.fa-bars{
+  color: hsl(204, 8%, 88%);
+  font-size: 25px;
+}
+nav li{
+  border-bottom: 1px solid hsla(0, 0%, 100%, .25);
+}
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 15px 0;
+  font-weight: 100;
+  font-family: inherit;
+}
+.btn{
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: inherit;
+  text-decoration: none;
+  transition: background-color 250ms ease-in-out;
+}
+.btn:hover{
+  background-color: hsl(0, 0%, 95%);
+}
+header{
+  padding: 0 20%;
+  text-align: center;
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+header h2{
+  color: hsl(192, 68%, 45%);
+}
+header p{
+  color: hsl(0, 0%, 40%);
+}
+header div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0 100px 0;
+}
+.btn-cta{
+  background-color: hsl(9, 89%, 66%);
+  color: white;
+  border: none;
+}
+.btn-cta:hover{
+  background-color: hsl(9, 89%, 75%);
+}
