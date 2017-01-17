@@ -1,0 +1,61 @@
+body{
+  margin: 1vw 20vw;
+}
+.container{
+  flex-direction: column;
+  align-items: center;
+}
+.fb{
+display: flex;
+}
+form{
+  width: 100%;
+  margin-bottom: 10px;
+}
+form input[type="text"]{
+  width: 50%;
+  padding: 5px;
+  margin: 0 10px 0px 0px;
+  align-self: center;
+}
+form input[type="submit"]{
+  align-self: center;;
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: white;
+}
+section{
+  display: flex;
+}
+section main{
+  padding-right: 2vw;
+  border-right: 1px solid black;
+  flex: 3;
+}
+.vid img{
+  width: 100%;
+}
+ul{
+  padding: 0;
+  list-style: none;
+}
+.border{
+  border: 2px solid black;
+  width: 100%;
+}
+hr{
+  width: 90%;
+}
+aside{
+  flex: 1;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ul li, li a{
+  align-items: center;
+}
+ul li img, li a img{
+  margin: 1vw;
+}
