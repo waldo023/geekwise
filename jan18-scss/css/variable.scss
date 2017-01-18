@@ -1,0 +1,11 @@
+$base-color: red;
+$color-2: lighten(adjust-hue($base-color, 25deg), 5%);
+$color-3: adjust-hue($base-color, 60deg);
+$color-4: adjust-hue($base-color, 140deg);
+$color-5: adjust-hue($base-color, 250deg);
+$color-6: darken(adjust-hue($base-color, 260deg), 15%);
+$color-7: lighten(adjust-hue($base-color, 270deg), 10%);
+
+$colors: $base-color, $color-2, $color-3, $color-4, $color-5, $color-6, $color-7;
+
+$i: 1;

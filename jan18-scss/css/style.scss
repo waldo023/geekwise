@@ -1,0 +1,41 @@
+@import 'variable';
+ul{
+  display: flex;
+  list-style: none;
+}
+li{
+  padding: 20px;
+  @each $color in $colors{
+    &:nth-child(#{ $i }){
+      background-color: $color;
+    }
+    $i: $i + 1;
+  }
+}
+// li:nth-of-type(1){
+//   background-color: $base-color;
+// }
+//
+// li:nth-of-type(2){
+//   background-color: $color-2;
+// }
+//
+// li:nth-of-type(3){
+//    background-color: $color-3;
+// }
+//
+// li:nth-of-type(4){
+//    background-color: $color-4;
+// }
+//
+// li:nth-of-type(5){
+//    background-color: $color-5;
+// }
+//
+// li:nth-of-type(6){
+//    background-color: $color-6;
+// }
+//
+// li:nth-of-type(7){
+//    background-color: $color-7;
+// }

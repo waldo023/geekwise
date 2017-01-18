@@ -1,0 +1,22 @@
+ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+
+li {
+  padding: 20px; }
+  li:nth-child(1) {
+    background-color: red; }
+  li:nth-child(2) {
+    background-color: #ff791a; }
+  li:nth-child(3) {
+    background-color: yellow; }
+  li:nth-child(4) {
+    background-color: #00ff55; }
+  li:nth-child(5) {
+    background-color: #2b00ff; }
+  li:nth-child(6) {
+    background-color: #3c00b3; }
+  li:nth-child(7) {
+    background-color: #9933ff; }
