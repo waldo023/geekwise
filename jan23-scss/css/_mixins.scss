@@ -1,0 +1,12 @@
+@mixin border-style($border-color){
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px $secondary-color;
+}
+
+@mixin list($amount, $ic){
+  width: calc(100% / #{$amount});
+   i.fa{
+    color: $ic;
+  }
+}

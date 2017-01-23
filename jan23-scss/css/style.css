@@ -1,0 +1,79 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+h1 {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #3366cc;
+}
+
+h2 {
+  font-family: Raleway;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  background-color: pink;
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #cc9933;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+a.btn:last-of-type {
+  border: 1px solid blue;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #cc9933;
+}
+
+ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+ul:first-of-type li {
+  width: calc(100% / 5);
+}
+
+ul:first-of-type li i.fa {
+  color: blue;
+}
+
+ul:nth-of-type(2) li {
+  width: calc(100% / 7);
+}
+
+ul:nth-of-type(2) li i.fa {
+  color: red;
+}
+
+ul:nth-of-type(3) li {
+  width: calc(100% / 9);
+}
+
+ul:nth-of-type(3) li i.fa {
+  color: green;
+}
