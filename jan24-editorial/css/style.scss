@@ -1,0 +1,101 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
+body{
+  margin: 0;
+  font-family: 'Roboto Slab';
+
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+p{
+  color: darken($terciary-color, 40%);
+  font-size:11px;
+}
+a{
+  text-decoration: none;
+}
+h1, h2, h3, h4{
+  color: $secondary-color;
+  font-weight: 700;
+}
+nav{
+  width: 300px;
+  > div{
+    background-color: darken($terciary-color, 5%);
+    padding: 20px;
+    input{
+      margin: 5px 0;
+      width: 90%;
+      padding: 7px;
+      border-radius: 3px;
+      border: 1px solid darken($terciary-color, 30%);
+    }
+  }
+  h3{
+    margin: 20px 0;
+  }
+  h3 + hr{
+    border: 1.5px solid $primary-color;
+    transform: translateY(-25px);
+    position: absolute;
+  }
+  h3 + hr:nth-of-type(1){
+    width: 60px;
+  }
+  h3 + hr:nth-of-type(2){
+    width: 120px;
+  }
+  ul li{
+    border-bottom: 1px solid darken($terciary-color, 15%);
+  }
+  ul:nth-of-type(1) li a{
+    display: block;
+    color: $secondary-color;
+    transition: color 200ms ease-in-out;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    letter-spacing: 1px;
+  }
+  li a:hover{
+    color: $primary-color;
+  }
+  ul:nth-of-type(2) a{
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 157px;
+  }
+
+  ul:nth-of-type(2) a:last-of-type{
+    height: auto;
+  }
+  ul:nth-of-type(2) li{
+    margin: 20px 0;
+  }
+
+  img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 250ms ease-in-out;
+  }
+  img:hover{
+    transform: scale(1.1);
+  }
+}
+.btn{
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  padding: 10px 15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+div.container{
+  background-color: $terciary-color;
+  footer hr{
+    width: 110px;
+  }
+}
