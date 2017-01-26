@@ -1,0 +1,8 @@
+
+
+$primary-color: hsl(165, 43%, 60%);
+$primary-trans: transparentize($primary-color, .95);
+$secondary-color: hsl(205, 8%, 26%);
+$terciary-color: hsl(210, 11%, 96%);
+$quad-color: darken($terciary-color, 40%);
+$border-color: darken($terciary-color, 15%);
