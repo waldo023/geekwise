@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+nav{
+  background-color: hsl(252, 90%, 6%);
+  padding: 20px;
+}
+ul li{
+  list-style: none;
+  margin: 0;
+  font-weight: lighter;
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+div.container{
+  margin: 0 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+label{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+label:last-of-type, label:nth-of-type(5){
+  align-self: center;
+  margin: 10px 0;
+}
+input[type="text"], input[type="email"], textarea{
+  min-width: 300px;
+  max-height: 100px;
+  margin: 5px 10px;
+}

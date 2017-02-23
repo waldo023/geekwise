@@ -11,6 +11,7 @@ submit.addEventListener('click' , function(a){
   a.preventDefault();
   var formInputs = document.querySelector('form').elements;
 
+
   for(i = 0; i < formInputs.length; i++){
     // user.push(formInputs[i].value);
     // formInputs[i].value = '';
