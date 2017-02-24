@@ -5,6 +5,15 @@ body{
 nav{
   background-color: hsl(252, 90%, 6%);
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+nav #login{
+  flex-direction: row;
+}
+#login input[type="text"], input{
+  margin: 0 5px;
+  min-width: 50px;
 }
 ul li{
   list-style: none;

@@ -12,33 +12,38 @@
     <ul>
       <li><a href="#">contact</a></li>
     </ul>
+    <form id="login">
+      <input type="text" name="user" placeholder="Username">
+      <input type="password" name="psw" placeholder="Password">
+      <input type="submit" name="" value="login">
+    </form>
   </nav>
   <div class="container">
     <div>
-      <p>Feel free to reach out to me.</p>
+      <p><span class="custom"></span>Feel free to reach out to me.</p>
     </div>
-    <form>
+    <form id="contact">
       <label>
-        <span>First</span><input type="text" placeholder="First Name">
+        <span>First</span><input type="text" placeholder=" First Name" disabled>
       </label>
       <label>
-        <span>Last</span><input type="text" placeholder="Last Name">
+        <span>Last</span><input type="text" placeholder=" Last Name" disabled>
       </label>
       <label>
-        <span>Email</span><input type="email" placeholder="Email">
+        <span>Email</span><input type="email" placeholder=" Email" disabled>
       </label>
       <label>
-        <span>Message</span><textarea name="name" rows="8" placeholder="Message"></textarea>
+        <span>Message</span><textarea name="name" rows="8" placeholder=" Message" disabled></textarea>
       </label>
       <label>
-        <input type="checkbox" checked> <span>sign up for my newsletter</span>
+        <input type="checkbox" checked disabled> <span>sign up for my newsletter</span>
       </label>
       <label>
-        <input type="submit" value="submit">
+        <input type="submit" value="submit" disabled>
       </label>
     </form>
   </div>
-
+<script src="js/md5.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
