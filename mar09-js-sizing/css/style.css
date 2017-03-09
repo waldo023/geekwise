@@ -1,0 +1,53 @@
+body{
+  margin:0;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+#meter{
+  position: fixed;
+  background-color: white;
+  border-radius: 5px;
+  left: 10px;
+  top: 10px;
+  box-shadow: 4px 4px 8px hsla(0, 0%, 0%, 0.5);
+  padding: 10px;
+  z-index: 999;
+}
+#meter ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header{
+  height: 40vw;
+  background-image: url(https://unsplash.it/1000/400);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.colorIn{
+  background-color: red;
+}
+section.colorIn2{
+  background-color: green;
+}
+section.colorIn3{
+  background-color: blue;
+}
+section{
+  padding: 10vw;
+  transition: background-color 2000ms ease-in-out;
+}
+
+section img{
+  width: 35%;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-radius: 3px;
+}
+section:nth-of-type(odd) img{
+  float: left;
+}
+section:nth-of-type(even) img{
+  float: right;
+}
