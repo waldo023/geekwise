@@ -1,0 +1,76 @@
+body{
+  margin: 0;
+  line-height: 1.5;
+}
+nav{
+  background-color: hsl(242, 18%, 74%);
+  padding: 20px;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+nav ul li a{
+  color: inherit;
+  text-decoration: none;
+  padding: 0 5vw;
+}
+#measure{
+  position: fixed;
+  background-color: hsl(0, 0%, 72%);
+  padding: 20px;
+  border-radius: 3px;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+#measure ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#measure form{
+  display: flex;
+  flex-direction: column;
+}
+form span{
+  font-size: 10px;
+  align-self: flex-start;
+}
+header{
+  background-image: url(https://unsplash.it/1000/1000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+main section{
+  padding: 20px;
+  margin: 2vw;
+  position: relative;
+  left: -2000px;
+  transition: left 1000ms ease-in-out;
+}
+main section.active{
+  left: 0;
+}
+main section:nth-of-type(even) img{
+  float: left;
+  position: relative;
+  left: 0px;
+}
+main section:nth-of-type(even) h2{
+  text-align: right;
+}
+main section:nth-of-type(odd) img{
+  float: right;
+  position: relative;
+  right: 0px;
+}
