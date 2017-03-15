@@ -1,0 +1,126 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+body{
+  margin: 0;
+  background-color: hsl(232, 60%, 10%);
+  color: white;
+}
+main.inactive{
+  opacity: 0;
+  top: -100%;
+}
+
+main{
+  position: absolute;
+  top: 0px;
+  margin: 5vh 0;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 1000ms ease-out;
+}
+main > div.opt{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  background-image: url(../img/jacob-repko-64098.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 500ms ease-in-out;
+  position: relative;
+}
+main > div.opt:hover{
+  transform: scale(1.02);
+}
+main > div.opt div.content{
+  position: absolute;
+  width: 80%;
+  text-align: center;
+}
+main > div.opt div.content h1{
+  transform: translateY(150%);
+  transition: all 500ms ease-in-out;
+}
+main > div.opt div.content p{
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+main > div.opt:hover div.content h1{
+  transform: translateY(0);
+}
+main > div.opt:hover div.content p{
+  opacity: 100;
+}
+main > div.opt div.overlay{
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  background-color: hsla(199, 0%, 17%, 0.7);
+  transition: all 500ms ease-in-out;
+  z-index: 100;
+}
+
+main > div.opt:hover div.overlay {
+  border-radius: 1000px;
+  width: 50%;
+  height: 50%;
+  background-color: transparent;
+}
+div#arrows{
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1vw;
+}
+div#arrows div{
+  height: 100vh;
+  width: 4vw;
+  display: flex;
+  align-items: center;
+}
+i.fa{
+  font-size: 20px;
+}
+div.scontainer{
+  display: flex;
+  position: relative;
+  width: 80vw;
+  margin: 0 5vw;
+
+
+}
+div.slide{
+  width: 80vw;
+  position: absolute;
+  transition: all 1000ms ease-out;
+}
+div.slide.active{
+  left: 0;
+  right: 0;
+  opacity: 100;
+}
+div.slide.left{
+  left: -200%;
+}
+div.slide.bottom{
+  bottom: -200%;
+  left: 0;
+}
+div.slide.right{
+  right: -200%;
+  bottom: 0;
+  opacity: 0;
+}
+main > div.slide div{
+  flex: 1;
+}
+div.slide div img{
+  width: 100%;
+}
