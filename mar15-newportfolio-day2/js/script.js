@@ -177,8 +177,10 @@ opt2.addEventListener('click', function(){
   secMain.classList.remove('inactive');
   secMain.innerHTML = projectSlide;
 
-  var leftChev = document.querySelector('i.fa-chevron-left'),
-      rightChev = document.querySelector('i.fa-chevron-right');
+  var leftChev = document.querySelector('#arrows div:nth-child(1)'),
+      rightChev = document.querySelector('#arrows div:nth-child(2)');
+
+  console.log(leftChev, rightChev);
 
   var scontainer = document.querySelector('.scontainer');
 
@@ -330,5 +332,4 @@ opt2.addEventListener('click', function(){
 
 backBtn.addEventListener('click', function(e){
   e.preventDefault();
-  if(secMain.classList)
 });
