@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+}
+header{
+  background-color: hsl(200, 54%, 15%);
+  padding: 10px;
+}
+main{
+  transition: all 250ms ease-out;
+}
+main ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+main ul li{
+  width: 100px;
+  margin: 5px;
+}
+main ul li a img{
+  width: 100%;
+}
