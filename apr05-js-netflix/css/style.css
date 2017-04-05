@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#stars{
+  overflow: hidden;
+  display: flex;
+}
+#stars i{
+  color: hsl(62, 81%, 39%);
+}
+section ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0vw;
+}
+
+section ul li{
+  flex: none;
+  width: 250px;
+  margin: 25px 2px;
+  position: relative;
+  transition: transform 250ms ease-out;
+  overflow: hidden;
+}
+
+section ul li:hover{
+  transform: scale(1.25);
+}
+section ul li:hover div{
+  opacity: 100;
+}
+section ul li img{
+  width: 100%;
+  height: 100%;
+}
+
+section li div{
+  position: absolute;
+  color: white;
+  text-shadow: 1px 1px 1px hsla(0, 0%, 0%, .75);
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 250ms ease-out;
+}
