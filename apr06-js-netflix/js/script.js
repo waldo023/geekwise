@@ -1,7 +1,34 @@
 (function(){
     getReq('env.json', setEnv);
 }());
+var searchBtn = document.querySelector('header input[type="submit"]'),
+    searchInp = document.querySelector('header input[type="search"]'),
+    main = document.querySelector('main'),
+    header = document.querySelector('header');
+console.log(header);
+searchBtn.addEventListener('click', function(e){
+  e.preventDefault();
+  main.innerHTML = '';
+  var movies = searchInp.value,
+      url = myVars.get_root_url()+'search/movie?api_key='+myVars.get_api_key()+'&language=en-US&page=1&query=' + movies;
+      searchInp.value = '';
+      getReq(url, getMovies);
+});
 
+document.addEventListener('scroll', function(){
+  if(window.scrollY > 0){
+    header.classList.add('pos');
+  }else{
+    header.classList.remove('pos');
+  }
+});
+
+searchInp.addEventListener('focus', function(){
+  searchInp.classList.add('active');
+});
+searchInp.addEventListener('blur', function(){
+  searchInp.classList.remove('active');
+});
 function getReq(url, cb){
     var req = new XMLHttpRequest();
     req.open('GET', url);
@@ -37,7 +64,7 @@ function getMovies(movies){
         ul = document.createElement('ul'), li, year, poster_path, div, stars, title, overview;
     section.append(h1, ul);
     main.appendChild(section);
-    h1.textContent = 'Avengers'
+    h1.textContent = 'Top Picks'
 
     movies.results.forEach(function(e){
         li = document.createElement('li');
@@ -51,7 +78,7 @@ function getMovies(movies){
         year.textContent = e.release_date.split("-").splice(0, 1);
         title.textContent = e.title;
         overview.textContent = e.overview.split(".").splice(0, 1) + "...";
-        poster_path.src = myVars.get_img_url()+'w500'+e.poster_path;
+        poster_path.src = myVars.get_img_url()+'w1000'+e.poster_path;
         stars.id ="stars";
         stars.innerHTML =
           '<i class="fa fa-star" aria-hidden="true"></i>'+
@@ -66,6 +93,12 @@ function getMovies(movies){
         div.append(title, stars, year, overview);
         ul.appendChild(li);
     });
+    var title = document.querySelector('section.display h2'),
+        description = document.querySelector('section.display p:nth-of-type(2)'),
+        img = document.querySelector('section.display');
+        img.style.backgroundImage = 'url(' + myVars.get_img_url()+'w500' + movies.results[0].poster_path + ')';
+        description.textContent = movies.results[0].overview;
+        title.textContent = movies.results[0].title;
 }
 function envVars(){
     var root_url, img_url, api_key, access_token;
